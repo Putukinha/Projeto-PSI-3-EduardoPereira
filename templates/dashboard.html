@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Painel{% endblock %}
+{% block page_title %}Visão geral{% endblock %}
+{% block content %}
+<div class="welcome"><div><span class="eyebrow mint">BEM-VINDO AO SISTEMA</span><h2>Conhecimento organizado.<br><span>Biblioteca em dia.</span></h2><p>Gerencie o catálogo, os leitores e os empréstimos em um só lugar.</p></div><div class="welcome-icon">▤</div></div>
+<div class="section-heading"><div><h2>Resumo do acervo</h2><p>Indicadores gerais da biblioteca</p></div><a class="button primary" href="{{ url_for('loans.create') }}">＋ Novo empréstimo</a></div>
+<div class="stats-grid">
+  <div class="stat-card"><div class="stat-top"><span>USUÁRIOS</span><span class="stat-icon">♙</span></div><strong>{{ stats.users }}</strong><small>Leitores cadastrados</small><a href="{{ url_for('users.index') }}">Ver usuários →</a></div>
+  <div class="stat-card"><div class="stat-top"><span>LIVROS</span><span class="stat-icon">▤</span></div><strong>{{ stats.books }}</strong><small>Títulos no catálogo</small><a href="{{ url_for('books.index') }}">Ver catálogo →</a></div>
+  <div class="stat-card"><div class="stat-top"><span>EMPRÉSTIMOS</span><span class="stat-icon">⇄</span></div><strong>{{ stats.loans }}</strong><small>Registros realizados</small><a href="{{ url_for('loans.index') }}">Ver empréstimos →</a></div>
+  <div class="stat-card"><div class="stat-top"><span>EM ABERTO</span><span class="stat-icon">◷</span></div><strong>{{ stats.active }}</strong><small>Precisam de acompanhamento</small><a href="{{ url_for('loans.index') }}">Acompanhar →</a></div>
+</div>
+<div class="panel"><div class="panel-heading"><div><h2>Empréstimos recentes</h2><p>Últimos registros adicionados</p></div><a class="text-link" href="{{ url_for('loans.index') }}">Ver todos →</a></div>
+{% if recent_loans %}<div class="table-wrap"><table><thead><tr><th>CÓDIGO</th><th>USUÁRIO</th><th>LIVROS</th><th>DEVOLUÇÃO PREVISTA</th><th>STATUS</th></tr></thead><tbody>{% for loan in recent_loans %}<tr><td>#{{ '%04d'|format(loan.id) }}</td><td>{{ loan.user.name }}</td><td>{{ loan.books|length }} livro(s)</td><td>{{ loan.due_date.strftime('%d/%m/%Y') }}</td><td><span class="pill {{ 'success' if loan.status == 'Devolvido' else ('danger' if loan.is_overdue else 'warning') }}">{{ 'Atrasado' if loan.is_overdue else loan.status }}</span></td></tr>{% endfor %}</tbody></table></div>{% else %}<div class="empty-state"><div>⇄</div><strong>Nenhum empréstimo por aqui</strong><p>Cadastre usuários e livros para começar.</p></div>{% endif %}</div>
+{% endblock %}
