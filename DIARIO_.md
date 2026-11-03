@@ -64,6 +64,6 @@
 ## Etapas finais do projeto
 
 - **O que foi feito:** Criamos o arquivo `seed.py` para inserir alguns usuários, livros e empréstimos de exemplo no banco de dados. Também trabalhamos no README, explicando o funcionamento do sistema, como instalar as dependências e como executar o projeto.
-- **Dificuldade encontrada:** Precisamos conferir se as informações da documentação estavam de acordo com o que realmente havia sido desenvolvido.
-- **Como resolvi:** Revisamos os arquivos do projeto e atualizamos as informações do README.
-- **Próximo passo:** Fazer os últimos ajustes e preparar o projeto para a apresentação.
+- **Dificuldade encontrada:** Na parte de desenvolvimento de ligação, onde tivemos que separar bem direitinho para ficar certo e interligado, alem disso temos dificuldade em se reunir em si, para expor mais oque cada um estava fazendo e ter uma melhor organização.
+- **Como resolvi:** Fizemos os reajustes necessários e improvisamos em alguma parte mal resolvida.
+- **Próximo passo:** Este é o ultimo passo onde citei acima.
