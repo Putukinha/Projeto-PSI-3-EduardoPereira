@@ -127,10 +127,8 @@ sistema_bibliotecas/
 
 ## Dificuldades encontradas
 
-Registre aqui as dificuldades que o grupo realmente encontrou durante a implementação e como foram resolvidas. Exemplos possíveis para discutir: tabela intermediária do relacionamento N:N, validação de formulários e separação das responsabilidades MVC.
+tivemos dificuldades realmente em si reunir para fazer, pois só tinha as aulas do professor para realizar uma reunião e separar oque cada um devia fazer e seu papel no trabalho
 
 ## Declaração de autoria
 
-Cada integrante deve revisar o projeto, compreender as partes que desenvolveu e adaptar esta declaração à sua participação real.
-
-**Uso de IA:** esta base de código foi gerada com auxílio de IA generativa. O grupo deve declarar esse uso conforme as regras do professor e revisar, testar e compreender o código antes da entrega.
+Utilizamos de alguns exercícios passados do professor para realizar pesquisas, assim para ter uma base para fazer o código.
