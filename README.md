@@ -12,9 +12,9 @@ Aplicação web acadêmica para gerenciar usuários/leitores, livros e emprésti
 
 Preencha com os nomes reais e as responsabilidades acordadas pelo grupo:
 
-- Integrante 1: `Nome completo` — Modelos e banco de dados.
-- Integrante 2: `Nome completo` — Controllers e operações CRUD.
-- Integrante 3: `Nome completo` — Views, CSS, testes e documentação.
+- Integrante 1: “Eduardo Pereira da Costa” — Modelos e banco de dados.
+- Integrante 2: “Joan Pietro Fernandes de Araújo” — Controllers e operações CRUD.
+- Integrante 3: “Mateus Felipe da Costa” — Views, CSS, testes e documentação.
 
 ## Entidades
 
